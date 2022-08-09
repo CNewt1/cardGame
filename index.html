@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <button class="show-modal btn">Rules</button>
+    <h1 class="winner hidden"></h1>
+    <div class="overlay hidden"></div>
+    <div class="container">
+      <div class="vertical-center">
+        <button class="cardflip">Flip card</button>
+        <button class="hold">Hold</button>
+        <button class="reset hidden">Reset</button>
+        <img src="card.png" alt="" class="face" />
+      </div>
+      <!-- <div class="card"></div> -->
+      <div class="player1 active">
+        <div class="player1score"></div>
+        <div class="player1gamescore"></div>
+      </div>
+      <div class="player2">
+        <div class="player2score"></div>
+        <div class="player2gamescore"></div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+    <div class="modal hidden">
+      <button class="close-modal">&times;</button>
+      <p class="modal-p">
+        Flip the card to start racking up points, any card between 1 - 10 will
+        add that amount of points to your current turn. Flip as many cards as
+        you want, but be warned. If you flip a Jack, Queen, or King you lose all
+        of the points you've obtained this round. First player to rack up 100
+        points wins the game.
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
